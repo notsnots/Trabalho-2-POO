@@ -1,0 +1,42 @@
+1;51;Monster Inc.;Pete Docter;92.2
+2;22;Mr Robot;2015;2019;45
+1;13;Oppenheimer;Christopher Nolan;169.0
+1;25;Parasite;Bong Joon Ho;132.2
+1;17;Player Number One;Steven Spielberg;140.5
+1;11;Raiders of the Lost Ark;George Lucas;115.2
+2;58;Seinfeld;1989;1998;172
+2;62;South Park;1997;2024;327
+1;77;Star Trek Into Darkness;J.J. Abrams;172.8
+2;84;Star Trek: The Next Generation;1987;1994;176
+1;15;Star Wars: Episode IV: A New Hope;George Lucas;121.1
+1;23;Terminator 2: Judgment Day;James Cameron;137.7
+2;94;The Boys;2019;2024;40
+1;21;The Lord of the Rings: The Fellowship of the Ring;Peter Jackson;178.3
+1;91;The Matrix;Lana Wachowski;136.9
+2;48;The Office;2005;2013;188
+2;64;The Simpsons;1989;2024;772
+1;33;The Sisty Sense;M. Night Shyamalan;107.7
+1;31;Toy Story;John Lasseter;81.1
+1;83;Up;Pete Docter;96.5
+1;95;2001: A Space Odyssey;Stanley Kubrick;159.0
+2;76;Arrested Development;2003;2019;84
+1;87;Avatar;James Cameron;162.4
+2;46;Avatar: The Last Airbender;2005;2008;62
+1;55;Avengers: Endgame;Anthony Russo;181.1
+1;99;Back to the Future;Robert Zemeckis;116.5
+2;70;Battlestar Galactica;2004;2009;74
+2;52;Black Mirror;2011;2024;33
+1;43;Blade Runner;Ridley Scott;117.3
+2;38;Breaking Bad;2008;2013;62
+2;82;Community;2009;2015;110
+2;12;Friends;1994;2004;236
+1;75;Frozen;Chris Buck;102.0
+2;16;Game of Thrones;2011;2019;73
+2;98;Gravity Falls;2012;2016;41
+1;73;Harry Potter and the Sorcerer's Stone;Chris Columbus;152.6
+2;88;House;2004;2012;176
+2;18;How I Met Your Mother;2005;2014;208
+1;37;Howl's Moving Castle;Hayao Miyazaki;119.9
+1;39;Inside Out;Pete Docter;95.6
+1;63;Interstellar;Christopher Nolan;169.4
+1;53;Joker;Todd Phillips;122.1
