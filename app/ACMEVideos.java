@@ -34,6 +34,10 @@ public class ACMEVideos {
             StringBuilder conteudo = new StringBuilder();
 
             while ((linha = reader.readLine()) != null) {
+
+                if(linha.contains(",")){
+                    continue;
+                }
                 linha = linha.trim();
                 String[] divisao = linha.split(";");
                 int tipo = Integer.parseInt(divisao[0]);
@@ -44,21 +48,32 @@ public class ACMEVideos {
                     String diretor = divisao[3];
                     double duracao = Double.parseDouble(divisao[4]);
                     Filme filme = new Filme(codigo, titulo, diretor, duracao);
-                    conteudo.append("1:").append(filme.geraTexto()).append("\n");
+                    if(acervo.addVideo(filme)){
+                        acervo.addVideo(filme);
+                        conteudo.append("1:").append(filme.geraTexto()).append("\n");
+                    }else{
+                        System.out.println("1:Erro - codigo de video repetido\n");
+                    }
+                    
                 } else if (tipo == 2 && divisao.length >= 6) {
                     int anoInicio = Integer.parseInt(divisao[3]);
                     int anoFim = Integer.parseInt(divisao[4]);
                     int episodios = Integer.parseInt(divisao[5]);
                     Seriado serie = new Seriado(codigo, titulo, anoInicio, anoFim, episodios);
-                    conteudo.append("1:").append(serie.geraTexto()).append("\n");
-                } else {
-                    conteudo.append("1:Erro - codigo de video repetido\n");
+                    if(acervo.addVideo(serie)){
+                        acervo.addVideo(serie);
+                        conteudo.append("1:").append(serie.geraTexto()).append("\n");
+                    }else{
+                        conteudo.append("1:Erro - codigo de video repetido\n");
+                    }
                 }
             }
 
             Files.write(Paths.get("relatorio.txt"), conteudo.toString().getBytes(), StandardOpenOption.CREATE);
         } catch (IOException e) {
             System.out.println(e.getMessage());
+        } catch (NumberFormatException e) {
+            System.out.println("Erro ao converter valor numérico: " + e.getMessage());
         }
     }
 
